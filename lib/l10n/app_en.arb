@@ -1,0 +1,20 @@
+{
+  "appTitle": "To Do List",
+  "task": "Task",
+  "language": "Language",
+  "arabic": "Arabic",
+  "english": "English",
+  "mode": "Mode",
+  "lightMode": "Light Mode",
+  "darkMode": "Dark Mode",
+  "settings": "Settings",
+  "editTask": "Edit Task",
+  "taskTitle": "Task Title",
+  "taskDetails": "Task Details",
+  "selectTime": "Select Time",
+  "saveChanges": "Save Changes",
+  "done": "Done",
+  "enterYourTask": "Enter Your Task",
+  "addNewTask": "Add New Task",
+  "delete": "Delete"
+}

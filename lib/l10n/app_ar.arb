@@ -1,0 +1,20 @@
+{
+  "appTitle": "قائمة المهام",
+  "task": "مهمة",
+  "language": "اللغة",
+  "arabic": "العربية",
+  "english": "الإنجليزية",
+  "mode": "الحالة",
+  "lightMode": "وضع الإضائة",
+  "darkMode": "وضع الظلام",
+  "settings": "الإعدادات",
+  "editTask": "تعديل المهمة",
+  "taskTitle": "عنوان المهمة",
+  "taskDetails": "تفاصيل المهمة",
+  "selectTime": "اختيار الوقت",
+  "saveChanges": "حفظ التغييرات",
+  "done": "تم",
+  "enterYourTask": "أدخل مهمتك",
+  "addNewTask": "إضافة مهمة جديدة",
+  "delete": "حذف"
+}
