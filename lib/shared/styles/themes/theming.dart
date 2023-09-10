@@ -6,6 +6,7 @@ class MyTheme {
   static const Color blackColor = Color(0xFFFFFFFF);
 
   static ThemeData lightMode = ThemeData(
+    scaffoldBackgroundColor: const Color(0xFFDFECDB),
     primaryColor: primaryColor,
     colorScheme: const ColorScheme(
         brightness: Brightness.light,
@@ -25,7 +26,7 @@ class MyTheme {
         surface: Color(0xFFC8C9CB),
         // icons border
         onSurface: Colors.indigo // backup color
-        ),
+    ),
     appBarTheme: AppBarTheme(
       backgroundColor: const Color(0xFF5D9CEC),
       centerTitle: false,
@@ -53,6 +54,7 @@ class MyTheme {
     ),
   );
   static ThemeData darkMode = ThemeData(
+      scaffoldBackgroundColor: const Color(0xFF060E1E),
       primaryColor: blackColor,
       colorScheme: const ColorScheme(
           brightness: Brightness.dark,
@@ -72,7 +74,7 @@ class MyTheme {
           surface: Color(0xFFC8C9CB),
           // icons border
           onSurface: Colors.indigo // backup color
-          ),
+      ),
       appBarTheme: AppBarTheme(
         centerTitle: false,
         titleTextStyle: GoogleFonts.poppins(
