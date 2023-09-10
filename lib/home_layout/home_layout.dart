@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:git_test/add_task.dart';
 import 'package:git_test/screens/home_screen/home_screen.dart';
-import 'package:git_test/screens/settings_screen.dart';
+import 'package:git_test/screens/settings/settings_screen.dart';
+import 'package:git_test/screens/tasks/add_task_bottom_sheet.dart';
 
 import '../shared/styles/themes/theming.dart';
 
@@ -43,6 +43,8 @@ class _HomeLayoutState extends State<HomeLayout> {
           color: Colors.white,
           clipBehavior: Clip.antiAlias,
           child: BottomNavigationBar(
+            selectedItemColor: Theme.of(context).colorScheme.secondary,
+            unselectedItemColor: Theme.of(context).colorScheme.surface,
             showUnselectedLabels: false,
             showSelectedLabels: false,
             type: BottomNavigationBarType.fixed,
@@ -61,7 +63,7 @@ class _HomeLayoutState extends State<HomeLayout> {
       body: Column(
         children: [
           Container(
-            padding: const EdgeInsets.only(left: 51, top: 59),
+            padding: const EdgeInsets.only(left: 51, top: 59, right: 51),
             height: 157,
             width: double.infinity,
             decoration: BoxDecoration(
@@ -80,9 +82,11 @@ class _HomeLayoutState extends State<HomeLayout> {
 
   Future showAddTask() {
     return showModalBottomSheet(
-        context: context,
-        builder: (context) {
-          return AddTask();
-        });
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+              topRight: Radius.circular(20), topLeft: Radius.circular(20))),
+      context: context,
+      builder: (context) => const AddTask(),
+    );
   }
 }

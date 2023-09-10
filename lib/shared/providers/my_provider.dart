@@ -8,6 +8,11 @@ class MyProvider extends ChangeNotifier {
     language = lang;
     notifyListeners();
   }
+
+  void changeTheme(ThemeMode theme) {
+    myTheme = theme;
+    notifyListeners();
+  }
 // void changeTheme(ThemeMode theme) {
 //   themeMode = theme;
 //   notifyListeners();

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:git_test/home_layout/home_layout.dart';
-import 'package:git_test/screens/settings_screen.dart';
+import 'package:git_test/screens/settings/settings_screen.dart';
 import 'package:git_test/shared/providers/my_provider.dart';
 import 'package:git_test/shared/styles/themes/theming.dart';
 import 'package:provider/provider.dart';
