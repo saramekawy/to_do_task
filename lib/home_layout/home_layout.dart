@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:git_test/add_task.dart';
 import 'package:git_test/screens/home_screen/home_screen.dart';
 import 'package:git_test/screens/settings_screen.dart';
 
-import '../themes/my_theme.dart';
+import '../shared/styles/themes/theming.dart';
 
 class HomeLayout extends StatefulWidget {
   static const routeName = "Home";
@@ -26,7 +27,9 @@ class _HomeLayoutState extends State<HomeLayout> {
         shape: OutlineInputBorder(
             borderSide: const BorderSide(color: Colors.white, width: 4),
             borderRadius: BorderRadius.circular(35)),
-        onPressed: () {},
+        onPressed: () {
+          showAddTask();
+        },
         child: const Icon(
           Icons.add,
           color: Colors.white,
@@ -73,5 +76,13 @@ class _HomeLayoutState extends State<HomeLayout> {
         ],
       ),
     );
+  }
+
+  Future showAddTask() {
+    return showModalBottomSheet(
+        context: context,
+        builder: (context) {
+          return AddTask();
+        });
   }
 }
