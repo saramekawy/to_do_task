@@ -25,8 +25,8 @@ class MyTheme {
         // place holders color
         surface: Color(0xFFC8C9CB),
         // icons border
-        onSurface: Colors.indigo // backup color
-    ),
+        onSurface: Colors.white // backup color
+        ),
     appBarTheme: AppBarTheme(
       backgroundColor: const Color(0xFF5D9CEC),
       centerTitle: false,
@@ -63,17 +63,17 @@ class MyTheme {
           onPrimary: blackColor,
           // color of smallest text (time)
           secondary: Color(0xFF5D9CEC),
-          // container , text color , background for the buttons
-          onSecondary: Color(0xFF61E757),
-          // done task
-          error: Color(0xFFEC4B4B),
-          onError: blackColor,
-          background: Color(0xFF060E1E),
-          onBackground: Color(0xFFCDCACA),
-          // place holders color
-          surface: Color(0xFFC8C9CB),
-          // icons border
-          onSurface: Colors.indigo // backup color
+        // container , text color , background for the buttons
+        onSecondary: Color(0xFF61E757),
+        // done task
+        error: Color(0xFFEC4B4B),
+        onError: blackColor,
+        background: Color(0xFF060E1E),
+        onBackground: Color(0xFFCDCACA),
+        // place holders color
+        surface: Color(0xFFC8C9CB),
+        // icons border
+        onSurface: Color(0xFF060E1E), // backup color
       ),
       appBarTheme: AppBarTheme(
         centerTitle: false,
