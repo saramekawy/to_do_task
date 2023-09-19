@@ -16,5 +16,6 @@
   "done": "Done",
   "enterYourTask": "Enter Your Task",
   "addNewTask": "Add New Task",
-  "delete": "Delete"
+  "delete": "Delete",
+  "homePage": "Home Page"
 }

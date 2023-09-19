@@ -102,6 +102,19 @@ class _AddTaskState extends State<AddTask> {
 
   Future<void> _selectDate(BuildContext context) async {
     final DateTime? selected = await showDatePicker(
+      builder: (context, child) {
+        return Theme(
+            data: Theme.of(context).copyWith(
+                colorScheme: ColorScheme.light(
+                  primary: Colors.blue,
+                  onPrimary: Colors.white,
+                  onSurface: Colors.black,
+                ),
+                textButtonTheme: TextButtonThemeData(
+                    // style: ElevatedButton.styleFrom(backgroundColor: Colors.blue,)
+                    )),
+            child: child!);
+      },
       context: context,
       initialDate: selectDate,
       firstDate: DateTime.now(),
