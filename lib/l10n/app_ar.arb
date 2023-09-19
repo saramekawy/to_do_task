@@ -16,5 +16,6 @@
   "done": "تم",
   "enterYourTask": "أدخل مهمتك",
   "addNewTask": "إضافة مهمة جديدة",
-  "delete": "حذف"
+  "delete": "حذف",
+  "homePage": "الصفحة الرئيسية"
 }

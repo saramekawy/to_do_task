@@ -15,6 +15,7 @@ class HomeLayout extends StatefulWidget {
 
 class _HomeLayoutState extends State<HomeLayout> {
   List<Widget> screens = [HomeScreen(), SettingsScreen()];
+  List<String> pageNames = ["Home", "Settings"];
 
   int index = 0;
 
@@ -63,17 +64,17 @@ class _HomeLayoutState extends State<HomeLayout> {
       body: Column(
         children: [
           Container(
-            padding: const EdgeInsets.only(left: 51, top: 59, right: 51),
-            height: 157,
-            width: double.infinity,
-            decoration: BoxDecoration(
-              color: Theme.of(context).colorScheme.secondary,
-            ),
-            child: Text(
-              AppLocalizations.of(context)!.settings,
-              style: MyTheme.lightMode.appBarTheme.titleTextStyle,
-            ),
-          ),
+              padding: const EdgeInsets.only(left: 51, top: 59, right: 51),
+              height: 157,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                color: Theme.of(context).colorScheme.secondary,
+              ),
+              child: index == 0
+                  ? Text(AppLocalizations.of(context)!.homePage,
+                      style: MyTheme.lightMode.appBarTheme.titleTextStyle)
+                  : Text(AppLocalizations.of(context)!.settings,
+                      style: MyTheme.lightMode.appBarTheme.titleTextStyle)),
           Expanded(child: screens[index]),
         ],
       ),

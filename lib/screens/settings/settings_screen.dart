@@ -96,3 +96,8 @@ showButtomSheetTheme(BuildContext context) {
     },
   );
 }
+
+String displayPageTitle(String pageName) {
+  String name = SettingsScreen.routeName;
+  return name;
+}
